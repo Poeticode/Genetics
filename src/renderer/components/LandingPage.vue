@@ -4,7 +4,7 @@
     <main>
       <div class="left-side">
         <span class="title">
-          Welcome to your new project!
+          Genetics - A highly configurable password generator
         </span>
         <system-information></system-information>
       </div>
@@ -17,6 +17,7 @@
             internal configurations, using the project structure, building your application,
             and so much more.
           </p>
+          <word-reader></word-reader>
           <button @click="open('https://simulatedgreg.gitbooks.io/electron-vue/content/')">Read the Docs</button><br><br>
         </div>
         <div class="doc">
@@ -31,10 +32,11 @@
 
 <script>
   import SystemInformation from './LandingPage/SystemInformation'
+  import WordReader from './WordReader'
 
   export default {
     name: 'landing-page',
-    components: { SystemInformation },
+    components: { SystemInformation, WordReader },
     methods: {
       open (link) {
         this.$electron.shell.openExternal(link)

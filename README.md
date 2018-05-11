@@ -2,6 +2,9 @@
 
 > Highly customizable password generator
 
+## Wordlist
+We're using the [5-die EFF diceware list](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases). 7776 words between 3 to 9 characters in length.
+
 #### Build Setup
 
 ``` bash
